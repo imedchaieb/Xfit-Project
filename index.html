@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Xfit Gym</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/daisyui@4/dist/full.min.css"
+        rel="stylesheet"
+        type="text/css"
+    />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section,
+        footer {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+
+    <!-- ========================================================= -->
+    <!-- NAVBAR -->
+    <!-- ========================================================= -->
+
+    <header class="sticky top-0 z-20">
+
+        <nav class="navbar bg-black text-white px-6">
+
+            <!-- Logo -->
+            <div class="flex-1">
+                <a href="#home">
+                    <img
+                        src="assets/images/logo.jpg"
+                        alt="Xfit Gym Logo"
+                        class="h-20 w-20 rounded-full object-cover"  
+                    />
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex">
+
+                <ul class="menu menu-horizontal px-1 gap-2">
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#programs">Programs</a>
+                    </li>
+
+                    <li>
+                        <a href="#schedule">Schedule</a>
+                    </li>
+
+                    <li>
+                        <a href="#fees">Fees</a>
+                    </li>
+
+                    <li>
+                        <a href="#trainers">Trainers</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <div class="md:hidden">
+
+                <button
+                    id="menu-btn"
+                    type="button"
+                    class="btn btn-square btn-ghost"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                >
+
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        />
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Mobile Menu -->
+
+        <div
+            id="mobile-menu"
+            class="hidden md:hidden bg-black shadow-md"
+        >
+
+            <ul class="menu p-4">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#programs">Programs</a>
+                </li>
+
+                <li>
+                    <a href="#schedule">Schedule</a>
+                </li>
+
+                <li>
+                    <a href="#fees">Fees</a>
+                </li>
+
+                <li>
+                    <a href="#trainers">Trainers</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================================= -->
+    <!-- HOME / HERO -->
+    <!-- ========================================================= -->
+
+    <section
+        id="home"
+        class="relative h-[80vh] w-full overflow-hidden"
+    >
+
+        <video
+            class="absolute top-0 left-0 w-full h-full object-cover"
+            src="assets/Videos/1erVideo.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+        ></video>
+
+
+        <!-- Dark Overlay -->
+
+        <div
+            class="absolute top-0 left-0 w-full h-full bg-black/60"
+        ></div>
+
+
+        <!-- Hero Content -->
+
+        <div
+            class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 text-white"
+        >
+
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 opacity-40">
+
+                Push Your
+                <span class="text-red-500 opacity-45">
+                    Limits
+                </span>
+
+            </h1>
+
+
+            <p class="text-lg md:text-xl mb-6 max-w-xl opacity-40">
+
+                Train harder, get stronger,
+                become the best version of yourself.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- PROGRAMS -->
+    <!-- ========================================================= -->
+
+    <section
+        id="programs"
+        class="max-w-6xl mx-auto px-5 py-16"
+    >
+
+        <div class="text-center mb-12">
+
+            <p
+                class="text-[#d81e2c] font-bold text-xs tracking-[3px] uppercase"
+            >
+                Our Programs
+            </p>
+
+
+            <div
+                class="w-9 h-[3px] bg-[#d81e2c] mx-auto my-3"
+            ></div>
+
+
+            <h2
+                class="text-white font-black uppercase tracking-wide text-3xl md:text-5xl"
+            >
+                Find Your Discipline
+            </h2>
+
+
+            <p
+                class="text-gray-400 mt-4 max-w-xl mx-auto"
+            >
+                Four departments, one goal —
+                helping you become stronger,
+                faster, and more confident.
+            </p>
+
+        </div>
+
+
+        <!-- Programs generated by JavaScript -->
+
+        <div
+            id="programs-row"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        ></div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- SCHEDULE -->
+    <!-- ========================================================= -->
+
+    <section
+        id="schedule"
+        class="max-w-7xl mx-auto px-4 py-16"
+    >
+
+        <!-- Title -->
+
+        <div class="text-center mb-10">
+
+            <p
+                class="text-[#d81e2c] font-bold text-xs tracking-[3px] uppercase"
+            >
+                Schedule
+            </p>
+
+
+            <div
+                class="w-10 h-[3px] bg-[#d81e2c] mx-auto my-3"
+            ></div>
+
+
+            <h2
+                class="text-white font-black uppercase tracking-wide text-3xl md:text-5xl"
+            >
+                Class Schedule
+            </h2>
+
+
+            <p class="text-gray-400 mt-3">
+                Group Classes — Adults
+            </p>
+
+        </div>
+
+
+        <!-- Schedule Grid -->
+
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3"
+        >
+
+
+            <!-- MONDAY -->
+
+            <div class="bg-[#111111] border border-neutral-800">
+
+                <div
+                    class="bg-[#d81e2c] text-white text-center py-3"
+                >
+                    <h3 class="font-black uppercase">
+                        Monday
+                    </h3>
+                </div>
+
+
+                <div class="p-4 space-y-4">
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            17:30 - 18:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            CAF
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Basma
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            18:30 - 19:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Cardio Mix
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Bilel
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            19:00 - 20:00
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Attack
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Moncef / Amine
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TUESDAY -->
+
+            <div class="bg-[#111111] border border-neutral-800">
+
+                <div
+                    class="bg-[#d81e2c] text-white text-center py-3"
+                >
+                    <h3 class="font-black uppercase">
+                        Tuesday
+                    </h3>
+                </div>
+
+
+                <div class="p-4 space-y-4">
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            09:00 - 10:00
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            CAF
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Bilel
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            17:30 - 18:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Pilates
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Basma
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            18:30 - 19:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Spinning
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Bilel
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            19:00 - 20:00
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            HIIT
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Achraf
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- WEDNESDAY -->
+
+            <div class="bg-[#111111] border border-neutral-800">
+
+                <div
+                    class="bg-[#d81e2c] text-white text-center py-3"
+                >
+                    <h3 class="font-black uppercase">
+                        Wednesday
+                    </h3>
+                </div>
+
+
+                <div class="p-4 space-y-4">
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            17:30 - 18:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Cardio Step
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            18:30 - 19:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Oriental
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Amel
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            19:00 - 20:00
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Combat
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Ghost Mandi
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- THURSDAY -->
+
+            <div class="bg-[#111111] border border-neutral-800">
+
+                <div
+                    class="bg-[#d81e2c] text-white text-center py-3"
+                >
+                    <h3 class="font-black uppercase">
+                        Thursday
+                    </h3>
+                </div>
+
+
+                <div class="p-4 space-y-4">
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            09:00 - 10:00
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            TRX
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Bilel
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            17:30 - 18:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Spinning
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Bilel
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            18:30 - 19:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Abs
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Ayoub
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            19:00 - 20:00
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            CrossFit
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Achraf
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FRIDAY -->
+
+            <div class="bg-[#111111] border border-neutral-800">
+
+                <div
+                    class="bg-[#d81e2c] text-white text-center py-3"
+                >
+                    <h3 class="font-black uppercase">
+                        Friday
+                    </h3>
+                </div>
+
+
+                <div class="p-4 space-y-4">
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            17:30 - 18:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            TRX
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            18:30 - 19:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Upper Shape
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            19:30 - 20:30
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Combat Attack
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Isla
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SATURDAY -->
+
+            <div class="bg-[#111111] border border-neutral-800">
+
+                <div
+                    class="bg-[#d81e2c] text-white text-center py-3"
+                >
+                    <h3 class="font-black uppercase">
+                        Saturday
+                    </h3>
+                </div>
+
+
+                <div class="p-4 space-y-4">
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            09:00 - 10:00
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Spinning
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Bilel
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-[#d81e2c] text-sm font-bold">
+                            18:00 - 19:00
+                        </p>
+
+                        <p class="text-white font-black uppercase">
+                            Zumba
+                        </p>
+
+                        <p class="text-gray-500 text-xs uppercase">
+                            Emna
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- FEES -->
+    <!-- ========================================================= -->
+
+    <section
+        id="fees"
+        class="max-w-6xl mx-auto px-5 py-16"
+    >
+
+        <div class="text-center mb-10">
+
+            <p
+                class="text-[#d81e2c] font-bold text-xs tracking-[3px] uppercase"
+            >
+                Pricing
+            </p>
+
+
+            <div
+                class="w-9 h-[3px] bg-[#d81e2c] mx-auto my-3"
+            ></div>
+
+
+            <h2
+                class="text-white font-black uppercase tracking-wide text-3xl md:text-5xl"
+            >
+                Choose Your Plan
+            </h2>
+
+
+            <p class="text-gray-400 mt-4 max-w-xl mx-auto">
+
+                Access to the club's equipment and facilities,
+                with plans adapted to your goals.
+
+            </p>
+
+        </div>
+
+
+        <!-- Pricing Tabs -->
+
+        <div class="flex justify-center gap-3 mb-10">
+
+            <button
+                id="tab-muscu"
+                class="tab-btn px-6 py-2 rounded-full font-bold uppercase text-sm bg-[#d81e2c] text-white"
+            >
+                Musculation + Cardio
+            </button>
+
+
+            <button
+                id="tab-libre"
+                class="tab-btn px-6 py-2 rounded-full font-bold uppercase text-sm bg-neutral-800 text-gray-300"
+            >
+                Free Access
+            </button>
+
+        </div>
+
+
+        <!-- Pricing Cards -->
+
+        <div
+            id="pricing-row"
+            class="grid grid-cols-1 md:grid-cols-4 gap-6"
+        ></div>
+
+
+        <!-- Student Offer -->
+
+        <div
+            class="mt-12 border border-[#d81e2c] rounded-xl p-6 flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left"
+        >
+
+            <h3
+                class="text-white font-black uppercase tracking-wide text-lg"
+            >
+                Student Offer
+            </h3>
+
+
+            <div class="flex gap-8">
+
+                <p class="text-gray-300">
+                    Musculation + Cardio —
+                    <span
+                        class="text-[#d81e2c] font-bold text-xl"
+                    >
+                        50 DT
+                    </span>
+                </p>
+
+
+                <p class="text-gray-300">
+                    Free Access —
+                    <span
+                        class="text-[#d81e2c] font-bold text-xl"
+                    >
+                        70 DT
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- TRAINERS -->
+    <!-- ========================================================= -->
+
+    <section
+        id="trainers"
+        class="max-w-6xl mx-auto px-5 py-16"
+    >
+
+        <div class="text-center mb-10">
+
+            <p
+                class="text-[#d81e2c] font-bold text-xs tracking-[3px] uppercase"
+            >
+                Our Team Members
+            </p>
+
+
+            <div
+                class="w-9 h-[3px] bg-[#d81e2c] mx-auto my-3"
+            ></div>
+
+
+            <h2
+                class="text-white font-black uppercase tracking-wide text-3xl md:text-5xl"
+            >
+                Meet Our Amazing Team
+            </h2>
+
+        </div>
+
+
+        <!-- Trainers generated by JavaScript -->
+
+        <div
+            id="team-row"
+            class="flex items-end gap-6 overflow-x-auto snap-x snap-proximity scroll-smooth pb-3 px-1"
+        ></div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- CONTACT / FOOTER -->
+    <!-- ========================================================= -->
+
+    <footer id="contact">
+
+        <!-- Google Map -->
+
+        <div class="w-full h-[350px]">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.1207607539473!2d10.116962599999992!3d36.839583800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd32e662c27daf%3A0xe65d34dec56bd179!2sIntilaka!5e0!3m2!1sfr!2stn!4v1788911481643!5m2!1sfr!2stn"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+
+        </div>
+
+
+        <!-- Footer Content -->
+
+        <div class="bg-black text-gray-300 px-6 py-14">
+
+            <div
+                class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10"
+            >
+
+
+                <!-- Brand -->
+
+                <div>
+
+                    <div class="flex items-center gap-2 mb-3">
+
+                        <img
+                            src="assets/images/logo.jpg"
+                            alt="Gym Logo"
+                            class="h-10 w-10 rounded-full object-cover"
+                        />
+
+
+                        <span
+                            class="text-white font-black uppercase tracking-wide text-lg"
+                        >
+                            Xfit
+                        </span>
+
+                    </div>
+
+
+                    <p class="text-sm text-gray-400 mb-4">
+
+                        Train harder, get stronger,
+                        become the best version of yourself.
+
+                    </p>
+
+
+                    <!-- Social Icons -->
+
+                    <div class="flex gap-3">
+
+                        <!-- Facebook -->
+
+                        <a
+                            href="https://www.facebook.com/p/X-FIT-GYM-Tunisia-100071388200697/?locale=fr_FR"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-9 h-9 flex items-center justify-center border border-gray-700 rounded hover:border-[#d81e2c] hover:text-[#d81e2c] transition-colors"
+                        >
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 fill-current"
+                                viewBox="0 0 24 24"
+                            >
+
+                                <path
+                                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99h-2.54V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 16.99 22 12z"
+                                />
+
+                            </svg>
+
+                        </a>
+
+
+                        <!-- Instagram -->
+
+                        <a
+                            href="https://www.instagram.com/_x.fit.gym_/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-9 h-9 flex items-center justify-center border border-gray-700 rounded hover:border-[#d81e2c] hover:text-[#d81e2c] transition-colors"
+                        >
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 fill-current"
+                                viewBox="0 0 24 24"
+                            >
+
+                                <path
+                                    d="M12 2c2.7 0 3 .01 4.1.06 1.1.05 1.85.23 2.5.48.68.27 1.25.62 1.82 1.19.57.57.92 1.14 1.19 1.82.25.65.43 1.4.48 2.5.05 1.1.06 1.4.06 4.1s-.01 3-.06 4.1c-.05 1.1-.23 1.85-.48 2.5a4.9 4.9 0 0 1-1.19 1.82 4.9 4.9 0 0 1-1.82 1.19c-.65.25-1.4.43-2.5.48-1.1.05-1.4.06-4.1.06s-3-.01-4.1-.06c-1.1-.05-1.85-.23-2.5-.48a4.9 4.9 0 0 1-1.82-1.19 4.9 4.9 0 0 1-1.19-1.82c-.25-.65-.43-1.4-.48-2.5C2.01 15 2 14.7 2 12s.01-3 .06-4.1c.05-1.1.23-1.85.48-2.5.27-.68.62-1.25 1.19-1.82A4.9 4.9 0 0 1 5.55 2.39c.65-.25 1.4-.48 2.5-.48C9.15 2.01 9.45 2 12.15 2H12zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"
+                                />
+
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+
+                <div>
+
+                    <h3
+                        class="text-white font-bold uppercase tracking-wide mb-4"
+                    >
+                        Quick Links
+                    </h3>
+
+
+                    <ul class="space-y-2 text-sm">
+
+                        <li>
+                            <a
+                                href="#home"
+                                class="hover:text-[#d81e2c]"
+                            >
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#programs"
+                                class="hover:text-[#d81e2c]"
+                            >
+                                Programs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#schedule"
+                                class="hover:text-[#d81e2c]"
+                            >
+                                Schedule
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#trainers"
+                                class="hover:text-[#d81e2c]"
+                            >
+                                Trainers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#fees"
+                                class="hover:text-[#d81e2c]"
+                            >
+                                Fees
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#contact"
+                                class="hover:text-[#d81e2c]"
+                            >
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Opening Hours -->
+
+                <div>
+
+                    <h3
+                        class="text-white font-bold uppercase tracking-wide mb-4"
+                    >
+                        Opening Hours
+                    </h3>
+
+
+                    <ul class="space-y-2 text-sm">
+
+                        <li>
+                            <span class="text-white">
+                                Monday - Friday:
+                            </span>
+                            07:00 - 22:00
+                        </li>
+
+                        <li>
+                            <span class="text-white">
+                                Saturday:
+                            </span>
+                            07:00 - 20:00
+                        </li>
+
+                        <li>
+                            <span class="text-white">
+                                Sunday:
+                            </span>
+                            Day Off
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+
+                <div>
+
+                    <h3
+                        class="text-white font-bold uppercase tracking-wide mb-4"
+                    >
+                        Contact
+                    </h3>
+
+
+                    <ul class="space-y-3 text-sm">
+
+                        <li>
+                            📍 Intileka, en face du Terminus Métro 5
+                        </li>
+
+                        <li>
+                            📞 +216 25 359 565
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Bar -->
+
+            <div
+                class="max-w-6xl mx-auto border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500"
+            >
+
+                Copyright &copy;
+                <span id="year"></span>
+                Xfit. All rights reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================================= -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
